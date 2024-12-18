@@ -5,7 +5,10 @@
     ```
     conda activate venv/
     ```
-
+- Run file example:
+    ```
+    python -m src.components.data_ingestion
+    ```
 
 
 
@@ -13,6 +16,14 @@
 
 
 ## Code Explaination
+
+```
+@dataclass
+```
+- The @dataclass decorator in Python (introduced in Python 3.7) streamlines the creation of classes that are primarily used to store data. Normally, when you define a class to hold data, you must manually write methods like __init__, __repr__, and __eq__ to properly initialize, display, and compare instances of the class. With @dataclass, these methods are automatically generated for you based on the class variables you define.
+
+
+
 line 53, data_transformation.py
 ```
             categorical_pipeline = Pipeline(
