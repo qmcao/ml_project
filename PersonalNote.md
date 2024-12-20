@@ -91,3 +91,56 @@ By setting with_mean=False, StandardScaler will only scale by the standard devia
 
             '''
 
+
+
+# Model Selection
+
+- ``` model_trainer.py```
+
+    ```
+    models = {
+    "Random Forest": RandomForestRegressor(),
+    "Decision Tree": DecisionTreeRegressor(),
+    "Gradient Boosting": GradientBoostingRegressor(),
+    "Linear Regression": LinearRegression(),
+    "XGBRegressor": XGBRegressor(),
+    "CatBoosting Regressor": CatBoostRegressor(verbose=False),
+    "AdaBoost Regressor": AdaBoostRegressor(),                
+    
+}
+    ```
+
+    Summary:
+    
+    ### Random Forest
+    - Characteristics: Handles non-linear relationships, robust to overfitting, interpretable via feature importance
+    - Best Use Cases: Complex data with limited preprocessing
+
+    ### Decision Tree
+    - Characteristics: Simple and interpretable but prone to overfitting
+    - Best Use Cases: Quick insights, small datasets
+    
+    
+    ### Gradient Boosting
+    - Characteristics: Sequential learning, good for complex patterns, prone to overfitting without tuning
+    - Best Use Cases: Structured data with non-linear patterns
+    
+    ### Linear Regression
+    - Characteristics: Assumes linearity, fast, interpretable
+    - Best Use Cases: 	Linear relationships, baseline model
+    
+    
+    ### XGBoost
+    - Characteristics: Optimized boosting, high performance, handles missing values
+    - Best Use Cases: Large datasets, competitive modeling
+    
+    ### CatBoost
+    - Characteristics: Optimized for categorical data, less overfitting
+    - Best Use Cases: Data with many categorical features
+
+    
+
+    ### AdaBoost	
+    - Characteristics: Emphasizes difficult-to-predict samples, combines weak learners	
+    - Best Use Cases: Small, clean datasets
+
