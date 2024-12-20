@@ -107,10 +107,10 @@ By setting with_mean=False, StandardScaler will only scale by the standard devia
     "CatBoosting Regressor": CatBoostRegressor(verbose=False),
     "AdaBoost Regressor": AdaBoostRegressor(),                
     
-}
+    }
     ```
 
-    Summary:
+- Summary:
     
     ### Random Forest
     - Characteristics: Handles non-linear relationships, robust to overfitting, interpretable via feature importance
