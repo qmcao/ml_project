@@ -1,5 +1,20 @@
 ## Note for each function and step
 
+## Create and Activate your environment
+    - Create
+    ```
+    conda create -p venv python==3.8 -y
+    ```
+
+    - Activate
+    ```
+    conda activate venv/
+    ```
+
+    - Notes:
+        - For command prompt termnial only, syntax might differ on other termnial.
+
+
 ## Code needed to run:
 - Activate environment:
     ```
@@ -110,7 +125,7 @@ By setting with_mean=False, StandardScaler will only scale by the standard devia
     }
     ```
 
-- Summary:
+-Summary:
     
     ### Random Forest
     - Characteristics: Handles non-linear relationships, robust to overfitting, interpretable via feature importance
